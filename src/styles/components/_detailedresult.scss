@@ -1,0 +1,199 @@
+.detailedresult-container {
+  margin: 50px 0 50px 0;
+  width: 80%;
+  display: flex;
+  font-family: $font-3;
+  font-weight: $font-weight-3;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px black;
+
+  .time-info {
+    margin: 20px 0 20px 0;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    @include laptop {
+      font-size: 24px;
+    }
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+  .detail-info {
+    width: 100%;
+    display: flex;
+    column-gap: 1%;
+    align-items: center;
+    justify-content: center;
+    @include laptopL {
+      flex-wrap: wrap;
+      row-gap: 15px;
+    }
+    div {
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 23%;
+      height: 300px;
+      box-shadow: 5px 5px 5px black;
+      @include laptopL {
+        width: 47%;
+      }
+      @include tablet {
+        width: 95%;
+        height: 210px;
+      }
+      p {
+        font-size: 28px;
+        @media (max-width: 1800px) {
+          font-size: 24px;
+        }
+        @include laptop {
+          font-size: 20px;
+        }
+      }
+      span {
+        font-size: 20px;
+        @media (max-width: 1800px) {
+          font-size: 16px;
+        }
+        @include laptopL {
+          font-size: 20px;
+        }
+        @include laptop {
+          font-size: 16px;
+        }
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+      .wind-direction {
+        border-radius: 50%;
+        background: $color-6;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: 20px;
+        left: 10px;
+      }
+    }
+  }
+  .pokemon-card {
+    height: 490px;
+    display: flex;
+    column-gap: 1%;
+    margin: 15px 2.5% 15px 2.5%;
+    @include laptop {
+      flex-direction: column;
+      row-gap: 15px;
+      align-items: center;
+      height: inherit;
+    }
+    .pokemon-info {
+      border-radius: 25px;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      padding: 2%;
+      box-shadow: 5px 5px 5px black;
+      @include laptopL {
+        font-size: 20px;
+      }
+      @media (max-width: 1200px) {
+        font-size: 16px;
+      }
+      @include laptop {
+        height: 70%;
+      }
+      @include tablet {
+        padding: 20px 20px 20px 20px;
+      }
+      @media (max-width: 500px) {
+        font-size: 14px;
+      }
+      @include mobile {
+        font-size: 12px;
+      }
+    }
+    img {
+      border-radius: 25px;
+      box-shadow: 5px 5px 5px black;
+      @include laptop {
+        width: 40%;
+      }
+      @include tablet {
+        width: 90%;
+      }
+    }
+  }
+}
+.grass {
+  border: solid 4px $color-12;
+  color: $color-12;
+  background: $color-10;
+}
+.flying {
+  border: solid 4px $color-3;
+  color: $color-3;
+  background: $color-13;
+}
+.ground {
+  border: solid 4px $color-14;
+  color: $color-14;
+  background: $color-15;
+}
+.fire {
+  border: solid 4px $color-16;
+  color: $color-16;
+  background: $color-17;
+}
+.water {
+  border: solid 4px $color-4;
+  color: $color-3;
+  background: $color-7;
+}
+.electric {
+  border: solid 4px $color-5;
+  color: $color-3;
+  background: $color-18;
+}
+.ice {
+  border: solid 4px $color-19;
+  color: $color-3;
+  background: $color-6;
+}
+.dark,
+.ghost {
+  border: solid 4px $color-6;
+  color: $color-6;
+  background: $color-20;
+}
+.poison {
+  border: solid 4px $color-21;
+  color: $color-21;
+  background: $color-22;
+}
+.animate {
+  animation: animate 1500ms both ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-50%) scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+  }
+}

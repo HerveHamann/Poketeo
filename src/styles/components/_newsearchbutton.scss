@@ -1,0 +1,27 @@
+.reset-container {
+  display: flex;
+  justify-content: center;
+  padding: 75px 0 75px 0;
+  button {
+    border: solid 7px $color-4;
+    letter-spacing: 4px;
+    font-family: $font-4;
+    font-size: 28px;
+    color: $color-4;
+    padding: 0px 20px 5px 20px;
+    border-radius: 15px;
+    background: white;
+    cursor: pointer;
+    @include tablet {
+      padding: 0px 10px 0px 10px;
+      font-size: 20px;
+    }
+  }
+  button:hover {
+    animation: evolvetext 400ms both ease-in-out;
+  }
+
+  .border:hover {
+    animation: evolve 400ms both ease-in-out;
+  }
+}
