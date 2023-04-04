@@ -7,7 +7,7 @@ const useForecast = () => {
   const [cityOption, setCityOption] = useState<[]>([]);
   const [forecast, setForecast] = useState<forecastType | null>(null);
   const searchOptions = (value: string) => {
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${value},&limit=5&appid=${process.env.REACT_APP_API_KEY}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${value},&limit=5&appid=${process.env.REACT_APP_API_KEY}`)
       .then((res) => res.json())
       .then((data) => setCityOption(data))
       .catch((error) => console.error(error));

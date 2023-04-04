@@ -135,13 +135,15 @@
         font-family: $font-4;
         font-size: 28px;
         color: $color-4;
-        padding: 0px 20px 5px 20px;
-        border-radius: 15px;
+        width: 235px;
+        height: 85px;
+        border-radius: 10px;
         background: white;
         border: none;
         cursor: pointer;
         @include tablet {
-          padding: 0px 20px 0px 20px;
+          width: 185px;
+          height: 55px;
           font-size: 20px;
         }
       }

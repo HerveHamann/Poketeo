@@ -27,7 +27,7 @@ function App() {
       <Header />
       {forecast ? (
         <div>
-          <Result cityName={cityName} data={forecast} />
+          <Result cityName={cityName} data={forecast} />{" "}
           <NewSearchBtn setForecast={setForecast} setUserInput={setUserInput} setCity={setCity} />
         </div>
       ) : (

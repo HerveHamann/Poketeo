@@ -88,7 +88,7 @@ const Result = ({ data, cityName }: Props): JSX.Element => {
           >
             <div className="hour-container">A {toHour(item.dt, data.timezone, localtimezone)} Heures : </div>
             <img
-              src={`http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`}
+              src={`https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`}
               alt={item.weather[0].description}
             />
             <div className="description">{item.weather[0].description}</div>
