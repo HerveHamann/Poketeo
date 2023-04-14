@@ -54,7 +54,7 @@ const DetailedResult = ({ selectedData, pokemonName, selectedType }: Props): JSX
             </div>
             <div className={selectedType.name}>
               <p>Température :</p>
-              <span>Réele : {RoundedValue(selectedData.main.temp)} °C</span>
+              <span>Réelle : {RoundedValue(selectedData.main.temp)} °C</span>
               <span>Ressentie : {RoundedValue(selectedData.main.feels_like)} °C</span>
               <span>
                 {selectedData.main.temp_min !== selectedData.main.temp
