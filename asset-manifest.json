@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Poketeo/static/css/main.7e37e106.css",
-    "main.js": "/Poketeo/static/js/main.6de573bf.js",
+    "main.js": "/Poketeo/static/js/main.b9a0bfbc.js",
     "static/media/dracaufeu.webp": "/Poketeo/static/media/dracaufeu.2ab53b9a87eca1a52bbc.webp",
     "static/media/titlelogo.webp": "/Poketeo/static/media/titlelogo.e8e10920244174a052b0.webp",
     "static/media/Pokemon Solid.ttf": "/Poketeo/static/media/Pokemon Solid.5d60be1f7ff5fcc21fc1.ttf",
@@ -10,10 +10,10 @@
     "static/media/arrowleft.svg": "/Poketeo/static/media/arrowleft.0bafb8e3b8d8aeba6fec296ad8dd5628.svg",
     "static/media/arrowright.svg": "/Poketeo/static/media/arrowright.c0d2424bc65c07b5dc978d44b730ce6e.svg",
     "main.7e37e106.css.map": "/Poketeo/static/css/main.7e37e106.css.map",
-    "main.6de573bf.js.map": "/Poketeo/static/js/main.6de573bf.js.map"
+    "main.b9a0bfbc.js.map": "/Poketeo/static/js/main.b9a0bfbc.js.map"
   },
   "entrypoints": [
     "static/css/main.7e37e106.css",
-    "static/js/main.6de573bf.js"
+    "static/js/main.b9a0bfbc.js"
   ]
 }
